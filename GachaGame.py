@@ -985,5 +985,8 @@ async def on_message(message):
         pass
     await client.process_commands(message)
 
+with open('token.txt') as tokenfile:
+    TOKEN = tokenfile.readline()
 
-client.run("NDg3OTg3ODE1ODgwMzI3MTg4.XrCF-w.GAdKlbqj4gu1xnUVBWdaKdTsBLg")
+
+client.run(TOKEN)
